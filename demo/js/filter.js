@@ -1,4 +1,4 @@
-adapter = {};
+Filter = {};
 Filter.process = function (img) {
     var pixels;
     var worker;
@@ -18,7 +18,7 @@ Filter.process = function (img) {
 };
 
 (window.onload = function () {
-    Array.prototype.forEach.call(document.querySelectorAll('.main-article-image'), function (node) {
+    Array.prototype.forEach.call(document.querySelectorAll('.main-article-img'), function (node) {
         Filter.process(node);
     });
 })();
